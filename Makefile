@@ -8,7 +8,7 @@ check: $(addprefix check-example, $(EXAMPLES))
 output: $(addprefix example, $(addsuffix .output, $(EXAMPLES)))
 
 lispish.exe: lispish.cs
-	csc lispish.cs
+	csc -debug lispish.cs
 
 diagram: diagram.png
 
